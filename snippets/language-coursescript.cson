@@ -293,7 +293,7 @@
   'AnswerQuestion':
     'prefix': 'answerquestion'
     'body': """
-      [TYPE AnswerQuestions]
+      [TYPE AnswerQuestion]
       Text: $1 // qid
       Text: $2 // question
       Text: $3 // glossary
