@@ -277,10 +277,15 @@
       = Sandwich
       \"\"\"
       knowledge point:
+        synonyms: [vocabulary key 1, vocabulary key 2]
+        topical words: [vocabulary key 1, vocabulary key 2]
       dimension:
       band:
       level:
         -
+      welcome:
+        greating:
+        introduction:
       \"\"\"
 
       == Pre-test
@@ -316,10 +321,10 @@
       Text: $5
       Text: $6
     """
-  'TianKongWaBao':
-    'prefix': 'tiankongwabao'
+  'SentenceWordHunt':
+    'prefix': 'sentencewordhunt'
     'body': """
-      [TYPE TianKongWaBao]
+      [TYPE SentenceWordHunt]
       Audio(id=$1): $2
       Text: $3
       Text: $4
@@ -331,4 +336,35 @@
       [TYPE Category]
       Text(cate=$1): $2 // text with catagory
       Audio(id=xxxxx): cheap
+    """
+  'ParagraphCompletion':
+    'prefix': 'paragraphcompletion',
+    'body': """
+      [TYPE ParagraphCompletion]
+      Text: $1 // I {{dislike/like}} (like) you
+      Text: $2 // answer for algorithm
+      Audio(id=xxxxx): $3
+    """
+  'Bubbles':
+    'prefix': 'bubbles',
+    'body': """
+      [TYPE Bubbles]
+      Text: $1 // instruction, {{}} for highlight
+      Text: $2 // correct options, e.g. but,therefore
+      Text: $3 // wrong options
+    """
+  'SentenceReading':
+    'prefix': 'sentencereading',
+    'body': """
+      [TYPE Bubbles]
+      Text: $1 // sentence, {{}} for highlight
+      Audio(id=xxxxx): $2
+    """
+  'SentenceCompletion':
+    'prefix': 'sentencecompletion',
+    'body': """
+      [TYPE Bubbles]
+      Text: $1 // question
+      Text: $2 // algorithm answer
+      Audio(id=xxxxx): $2
     """
