@@ -341,9 +341,10 @@
     'prefix': 'paragraphcompletion',
     'body': """
       [TYPE ParagraphCompletion]
-      Text: $1 // I {{dislike/like}} (like) you
-      Text: $2 // answer for algorithm
-      Audio(id=xxxxx): $3
+      Text: $1 // 请根据 {{}} 填空
+      Text: $2 // I {{dislike/like}} (like) you
+      Text: $3 // answer for algorithm
+      Audio(id=xxxxx): $4
     """
   'Bubbles':
     'prefix': 'bubbles',
