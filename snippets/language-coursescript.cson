@@ -357,14 +357,14 @@
   'SentenceReading':
     'prefix': 'sentencereading',
     'body': """
-      [TYPE Bubbles]
+      [TYPE SentenceReading]
       Text: $1 // sentence, {{}} for highlight
       Audio(id=xxxxx): $2
     """
   'SentenceCompletion':
     'prefix': 'sentencecompletion',
     'body': """
-      [TYPE Bubbles]
+      [TYPE SentenceCompletion]
       Text: $1 // question
       Text: $2 // algorithm answer
       Audio(id=xxxxx): $2
