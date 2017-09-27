@@ -310,19 +310,19 @@
       Text: $2 // question
       Text: $3 // glossary
     """
-  'ReadParagraph':
-    'prefix': 'readparagraph'
+  'ParagraphReading':
+    'prefix': 'paragraphreading'
     'body': """
-      [TYPE ReadParagraph]
+      [TYPE ParagraphReading]
       Text: $1 // question
       Audio(id=$2): $3 // question
       Text: $4 // answer
       Audio(id=$5): $6 // answer
     """
-  'RepeatWords':
-    'prefix': 'repeatwords'
+  'WordRepeat':
+    'prefix': 'wordrepeat'
     'body': """
-      [TYPE RepeatWords]
+      [TYPE WordRepeat]
       Pic(id=$1): $2
       Audio(id=$3): $4
       Text: $5
