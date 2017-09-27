@@ -306,8 +306,7 @@
     'prefix': 'answerquestion'
     'body': """
       [TYPE AnswerQuestion]
-      Text: $1 // qid
-      Text: $2 // question
+      Text(id=$1): $2 // question
       Text: $3 // glossary
     """
   'ParagraphReading':
