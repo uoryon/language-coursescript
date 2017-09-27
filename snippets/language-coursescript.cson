@@ -349,8 +349,7 @@
       [TYPE ParagraphCompletion]
       Text: $1 // 请根据 {{}} 填空
       Text: $2 // I {{dislike}} (like) you
-      Text: $3 // I (dislike / like) to you. answer for algorithm。‘/’前为答案，后为原型
-      Audio(id=xxxxx): $4
+      Audio(id=xxxxx): $3
     """
   'Bubbles':
     'prefix': 'bubbles',
