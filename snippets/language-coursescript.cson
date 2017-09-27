@@ -365,7 +365,9 @@
     'prefix': 'sentencecompletion',
     'body': """
       [TYPE SentenceCompletion]
-      Text: $1 // question
-      Text: $2 // algorithm answer
-      Audio(id=xxxxx): $2
+      Pic(id=xxxxx): $1
+      Text: $2 // question
+      Text: $3 // must say
+      Text: $4 // algorithm answer
+      Audio(id=xxxxx): $5
     """
