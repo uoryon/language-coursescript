@@ -285,7 +285,12 @@
         -
       welcome:
         greating:
-        introduction:
+        knowledge_outline:
+      summary:
+        - title:
+          sub_title:
+        - title:
+          sub_title:
       \"\"\"
 
       == Pre-test
