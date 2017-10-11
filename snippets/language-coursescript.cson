@@ -339,7 +339,7 @@
   'Classification':
     'prefix': 'classification'
     'body': """
-      [TYPE Category]
+      [TYPE Classification]
       Text(cate=$1): $2 // text with catagory
       Audio(id=xxxxx): cheap
     """
