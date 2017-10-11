@@ -274,7 +274,7 @@
   'sandwich':
     'prefix': 'sandwich'
     'body': """
-      = Sandwich
+      = Sandwich 1
       \"\"\"
       knowledge point: []
       dimension:
@@ -293,11 +293,11 @@
           sub_title:
       \"\"\"
 
-      == Pre-test
+      == Pre-test 1
 
-      == Activities
+      == Activities 1
 
-      == Post-test
+      == Post-test 1
 
     """
   'AnswerQuestion':
