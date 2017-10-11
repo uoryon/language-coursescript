@@ -276,9 +276,7 @@
     'body': """
       = Sandwich
       \"\"\"
-      knowledge point:
-        synonyms: [vocabulary key 1, vocabulary key 2]
-        topical words: [vocabulary key 1, vocabulary key 2]
+      knowledge point: []
       dimension:
       band:
       level:
