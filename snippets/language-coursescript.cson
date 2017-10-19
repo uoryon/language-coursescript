@@ -369,8 +369,7 @@
     'body': """
       [TYPE SentenceCompletion]
       Pic(id=xxxxx): $1
-      Text: $2 // question
-      Text: $3 // must say
-      Text: $4 // algorithm answer
-      Audio(id=xxxxx): $5
+      Text: $2
+      Text: $3
+      Audio(id=xxxxx): $4
     """
