@@ -339,7 +339,7 @@
     'body': """
       [TYPE Classification]
       Text(cate=$1): $2 // text with catagory
-      Audio(id=xxxxx): cheap
+      Audio(id=x.mp3): cheap
     """
   'ParagraphCompletion':
     'prefix': 'paragraphcompletion',
@@ -347,7 +347,7 @@
       [TYPE ParagraphCompletion]
       Text: $1 // 请根据 {{}} 填空
       Text: $2 // I {{dislike}} (like) you
-      Audio(id=xxxxx): $3
+      Audio(id=x.mp3): $3
     """
   'Bubbles':
     'prefix': 'bubbles',
@@ -362,14 +362,52 @@
     'body': """
       [TYPE SentenceReading]
       Text: $1 // sentence, {{}} for highlight
-      Audio(id=xxxxx): $2
+      Audio(id=x.mp3): $2
     """
   'SentenceCompletion':
     'prefix': 'sentencecompletion',
     'body': """
       [TYPE SentenceCompletion]
-      Pic(id=xxxxx): $1
+      Pic(id=x.mp3): $1
       Text: $2
       Text: $3
-      Audio(id=xxxxx): $4
+      Audio(id=x.mp3): $4
+    """
+  'SentenceRephrase':
+    'prefix': 'sentencerephrase',
+    'body': """
+      [TYPE SentenceRephrase]
+      Text: $1 // 题干
+      Text: $2 // 复合句，空用 {{}} 包住，高亮词用 ()
+      Audio(id=x.mp3): $3 // 复合句录音
+      Text: $4 // 简单句
+      Audio(id=x.mp3): $5 // 简单句录音
+    """
+  'ChooseAndRead':
+    'prefix': 'chooseandread',
+    'body': """
+      [TYPE ChooseAndRead]
+      Text: $1 // instruction
+      Text: $2 // question 完整的句子，将答案用 {{}} 包住
+      Audio(id=x.mp3): $3
+      Text: $4 // 错误选项
+      Text: $5 // 错误选项
+    """
+  'WordHuntWithHint':
+    'prefix': 'wordhuntwithhint',
+    'body': """
+      [TYPE WordHuntWithHint]
+      Text: $1 // question
+      Text: $2 // answers, e.g. active,energetic
+      Audio(id=x.mp3): $3
+      Audio(id=x.mp3): $4
+    """
+  'SayTheWord':
+    'prefix': 'saytheword',
+    'body': """
+      [TYPE SayTheWord]
+      Text: $1 // 单词
+      Text: $2 // 单词要求的变换 e.g. 过去分词
+      Audio(id=x.mp3): $3
+      Audio(id=x.mp3): $4
     """
