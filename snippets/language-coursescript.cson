@@ -397,9 +397,12 @@
     'body': """
       [TYPE WordHuntWithHint]
       Text: $1 // question
-      Text: $2 // answers, e.g. active,energetic
-      Audio(id=x.mp3): $3
-      Audio(id=x.mp3): $4
+      Text: $2 // nth answer
+      Text: $3 // translation for nth answer
+      Audio(id=x.mp3): $4 // audio for nth answer
+      Text: $5 // nth answer
+      Text: $6 // translation for nth answer
+      Audio(id=x.mp3): $7 // audio for nth answer
     """
   'SayTheWord':
     'prefix': 'saytheword',
