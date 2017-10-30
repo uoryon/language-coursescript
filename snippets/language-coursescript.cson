@@ -408,8 +408,9 @@
     'prefix': 'saytheword',
     'body': """
       [TYPE SayTheWord]
-      Text: $1 // 单词
-      Text: $2 // 单词要求的变换 e.g. 过去分词
-      Audio(id=x.mp3): $3
+      Text: $1 // 题目要求
+      Text: $2 // 单词
+      Text: $3 // 单词要求的变换 e.g. 过去分词
       Audio(id=x.mp3): $4
+      Audio(id=x.mp3): $5
     """
