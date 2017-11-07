@@ -311,34 +311,34 @@
     'body': """
       [TYPE ParagraphReading]
       Text: $1 // question
-      Audio(id=$2): $3 // question
-      Text: $4 // answer
-      Audio(id=$5): $6 // answer
+      Audio: $2 // question
+      Text: $3 // answer
+      Audio: $4 // answer
     """
   'WordRepeat':
     'prefix': 'wordrepeat'
     'body': """
       [TYPE WordRepeat]
-      Pic(id=$1): $2
-      Audio(id=$3): $4
-      Text: $5
-      Text: $6
+      Pic: $1
+      Audio: $2
+      Text: $3
+      Text: $4
     """
   'SentenceWordHunt':
     'prefix': 'sentencewordhunt'
     'body': """
       [TYPE SentenceWordHunt]
-      Audio(id=$1): $2
+      Audio: $1
+      Text: $2
       Text: $3
-      Text: $4
-      Audio(id=$5): $6
+      Audio: $4
     """
   'Classification':
     'prefix': 'classification'
     'body': """
       [TYPE Classification]
       Text(cate=$1): $2 // text with catagory
-      Audio(id=x.mp3): cheap
+      Audio: cheap
     """
   'ParagraphCompletion':
     'prefix': 'paragraphcompletion',
@@ -346,7 +346,7 @@
       [TYPE ParagraphCompletion]
       Text: $1 // 请根据 {{}} 填空
       Text: $2 // I {{dislike}} (like) you
-      Audio(id=x.mp3): $3
+      Audio: $3
     """
   'Bubbles':
     'prefix': 'bubbles',
@@ -361,16 +361,16 @@
     'body': """
       [TYPE SentenceReading]
       Text: $1 // sentence, {{}} for highlight
-      Audio(id=x.mp3): $2
+      Audio: $2
     """
   'SentenceCompletion':
     'prefix': 'sentencecompletion',
     'body': """
       [TYPE SentenceCompletion]
-      Pic(id=x.mp3): $1
+      Pic: $1
       Text: $2
       Text: $3
-      Audio(id=x.mp3): $4
+      Audio: $4
     """
   'SentenceRephrase':
     'prefix': 'sentencerephrase',
@@ -378,9 +378,9 @@
       [TYPE SentenceRephrase]
       Text: $1 // 题干
       Text: $2 // 复合句，空用 {{}} 包住，高亮词用 ()
-      Audio(id=x.mp3): $3 // 复合句录音
+      Audio: $3 // 复合句录音
       Text: $4 // 简单句
-      Audio(id=x.mp3): $5 // 简单句录音
+      Audio: $5 // 简单句录音
     """
   'ChooseAndRead':
     'prefix': 'chooseandread',
@@ -388,7 +388,7 @@
       [TYPE ChooseAndRead]
       Text: $1 // instruction
       Text: $2 // question 完整的句子，将答案用 {{}} 包住
-      Audio(id=x.mp3): $3
+      Audio: $3
       Text: $4 // 错误选项
       Text: $5 // 错误选项
     """
@@ -399,10 +399,10 @@
       Text: $1 // question
       Text: $2 // nth answer
       Text: $3 // translation for nth answer
-      Audio(id=x.mp3): $4 // audio for nth answer
+      Audio: $4 // audio for nth answer
       Text: $5 // nth answer
       Text: $6 // translation for nth answer
-      Audio(id=x.mp3): $7 // audio for nth answer
+      Audio: $7 // audio for nth answer
     """
   'SayTheWord':
     'prefix': 'saytheword',
@@ -411,6 +411,6 @@
       Text: $1 // 题目要求
       Text: $2 // 单词
       Text: $3 // 单词要求的变换 e.g. 过去分词
-      Audio(id=x.mp3): $4
-      Audio(id=x.mp3): $5
+      Audio: $4
+      Audio: $5
     """
