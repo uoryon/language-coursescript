@@ -338,7 +338,7 @@
     'body': """
       [TYPE Classification]
       Text(cate=$1): $2 // text with catagory
-      Audio: cheap
+      Audio: $3
     """
   'ParagraphCompletion':
     'prefix': 'paragraphcompletion',
@@ -397,12 +397,9 @@
     'body': """
       [TYPE WordHuntWithHint]
       Text: $1 // question
-      Text: $2 // nth answer
-      Text: $3 // translation for nth answer
-      Audio: $4 // audio for nth answer
-      Text: $5 // nth answer
-      Text: $6 // translation for nth answer
-      Audio: $7 // audio for nth answer
+      Audio: $2 // audio for nth answer
+      Text: $3 // nth answer
+      Text: $4 // translation for nth answer
     """
   'SayTheWord':
     'prefix': 'saytheword',
