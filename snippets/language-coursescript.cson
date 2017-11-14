@@ -411,3 +411,22 @@
       Audio: $4
       Audio: $5
     """
+  'SequenceAndRead':
+    'prefix': 'sequenceandread',
+    'body': """
+      [TYPE SequenceAndRead]
+      Audio: $1
+      Text: $2 // 1st sentence
+      Text: $3 // 2nd sentence
+      Text: $4 // nth sentence
+    """
+  'Translation':
+    'prefix': 'translation',
+    'body': """
+      [TYPE Translation]
+      Text: $1 // question
+      Audio: $2 // audio of answer
+      Text: $3 // answer with highlight
+      Text: $4 // refAnswer
+      Text: $5 // 1st hint
+    """
