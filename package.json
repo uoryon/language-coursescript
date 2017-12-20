@@ -1,6 +1,6 @@
 {
   "name": "language-coursescript-uoryon",
-  "version": "0.1.18",
+  "version": "0.1.19",
   "description": "Syntax highlighting and snippets for CourseScript.",
   "repository": "https://github.com/uoryon/language-coursescript",
   "license": "MIT",
