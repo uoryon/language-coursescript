@@ -430,3 +430,19 @@
       Text: $4 // refAnswer
       Text: $5 // 1st hint
     """
+  'ErrorCorrection':
+    'prefix': 'errorcorrection',
+    'body': """
+      [TYPE ErrorCorrection]
+      Text: $1 // instruction 高亮用 {{}} 包住
+      Text: $2 // question
+      Text: $3 // 答案。需要改正的部分用 {{}} 包住。答案和错误用 '/' 分开。第一个为正确答案，第二个为错误答案。e.g. Teamwork {{is/are}} good.
+    """
+  'Paraphrase':
+    'prefix': 'paraphrase',
+    'body': """
+      [TYPE ErrorCorrection]
+      Text: $1 // instruction 高亮用 {{}} 包住
+      Text: $2 // question
+      Text: $3 // 答案。需要改正的部分用 {{}} 包住。答案和错误用 '/' 分开。第一个为正确答案，第二个为错误答案。e.g. Teamwork {{is/are}} good.
+    """
